@@ -20,3 +20,22 @@ const answers = []
             process.exit()
         }
     })
+
+    process.on('exit', () => {
+        console.log(`
+        Legal Bruno 
+
+        O que você aprendeu hoje foi:
+        ${answers[0]}
+        
+        O que te aborreceu e você poderia melhorar foi:
+        ${answers[1]}
+
+        O que te deixou feliz hoje:
+        ${answers[2]}
+
+        Você ajudou ${answers[3]}
+
+        Volte amanhã para nvoas reflexões
+        `)
+    })
