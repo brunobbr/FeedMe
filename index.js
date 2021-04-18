@@ -5,8 +5,8 @@ const questions = [
     "Quantas pessoas eu ajudei hoje"
 ]
 
-const ask = (index = 0 ) =>{
-    Process.stdout.write("\n" + questions[index] + ">")
+const ask = (index = 0 ) => {
+    process.stdout.write("\n" + questions[index] + ">")
 }
 
 ask()
@@ -34,8 +34,8 @@ const answers = []
         O que te deixou feliz hoje:
         ${answers[2]}
 
-        Você ajudou ${answers[3]}
+        Você ajudou ${answers[3]} pessoas
 
-        Volte amanhã para nvoas reflexões
+        Volte amanhã para novas reflexões
         `)
     })
